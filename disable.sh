@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 gsettings list-recursively org.gnome.desktop.wm.keybindings |
     perl -pe 's/(.*)\s*(\[.*?\])\s*$/$1\t$2\n/' |
